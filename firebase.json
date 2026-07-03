@@ -1,0 +1,28 @@
+{
+   "hosting": [
+     {
+       "site": "data-lumio",
+       "public": "dist",
+       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+       "rewrites": [
+         {
+           "source": "**",
+           "destination": "/index.html",
+           "function": "authRedirect"
+         }
+       ]
+     },
+     {
+       "site": "datalumio-test34",
+       "public": "dist",
+       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+       "rewrites": [
+         {
+           "source": "**",
+           "destination": "/index.html",
+           "function": "authRedirect"
+         }
+       ]
+     }
+   ]
+}
